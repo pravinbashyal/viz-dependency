@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/core": "^1.0.0-rc.5",
+    "@chakra-ui/icons": "^1.0.0-rc.5",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -11,18 +15,22 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "color-generator": "^0.1.0",
+    "emotion-theming": "^10.0.27",
+    "fuse.js": "^6.4.1",
     "lodash.uniq": "^4.5.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
     "react-table": "^7.6.0",
     "react-vis-force": "^0.3.1",
-    "typescript": "~3.7.2"
+    "typescript": "^3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "start": "npm run watch:css & react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "prettier": {
