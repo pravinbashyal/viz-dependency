@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Wrap, Collapse, Tag } from '@chakra-ui/core'
+import { Button, Wrap, Tag } from '@chakra-ui/core'
 
 export interface IListOfModulesProps {
   modules: any[]
@@ -24,7 +24,7 @@ export function ListOfModules({ modules }: IListOfModulesProps): JSX.Element {
         </Button>
       )}
       <Wrap>
-        {modules.slice(0, 2).map(({ source }) => (
+        {(show ? modules : modules.slice(0, 2)).map(({ source }) => (
           <Tag size="md" key={source} variant="solid" colorScheme="teal">
             {source}
           </Tag>
@@ -40,21 +40,6 @@ export function ListOfModules({ modules }: IListOfModulesProps): JSX.Element {
           </Button>
         )}
       </Wrap>
-      <Collapse mt={4} isOpen={show} margin="0">
-        <Wrap marginTop="4px">
-          {modules.slice(2).map(({ source }) => (
-            <Tag
-              margin="0"
-              size="md"
-              key={source}
-              variant="solid"
-              colorScheme="teal"
-            >
-              {source}
-            </Tag>
-          ))}
-        </Wrap>
-      </Collapse>
     </div>
   )
 }

@@ -1,0 +1,345 @@
+{
+  "modules": [
+    {
+      "source": "src/App.tsx",
+      "dependencies": [
+        {
+          "resolved": "src/App.css",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./App.css",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/Graph.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./Graph",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/Table.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "license": "BSD-3-Clause",
+          "module": "./Table",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/App.css",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "local"
+      ],
+      "dependencies": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/Graph.tsx",
+      "dependencies": [
+        {
+          "resolved": "src/helpers.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./helpers",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/VisData.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./VisData",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/helpers.ts",
+      "dependencies": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/VisData.ts",
+      "dependencies": [
+        {
+          "resolved": "src/deps.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./deps",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/helpers.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./helpers",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/deps.ts",
+      "dependencies": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/Table.tsx",
+      "dependencies": [
+        {
+          "resolved": "src/helpers.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./helpers",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/TableData.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./TableData",
+          "moduleSystem": "es6",
+          "dynamic": true,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/VisData.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./VisData",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/TableData.tsx",
+      "dependencies": [
+        {
+          "resolved": "src/ListOfModules.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./ListOfModules",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/ListOfModules.tsx",
+      "dependencies": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/Domain.ts",
+      "dependencies": [],
+      "orphan": true,
+      "valid": true
+    },
+    {
+      "source": "src/index.tsx",
+      "dependencies": [
+        {
+          "resolved": "src/App.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./App",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "resolved": "src/index.css",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "dependencyTypes": [
+            "local"
+          ],
+          "module": "./index.css",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/index.css",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "local"
+      ],
+      "dependencies": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "src/react-app-env.d.ts",
+      "dependencies": [],
+      "orphan": true,
+      "valid": true
+    },
+    {
+      "source": "src/typeGuard.ts",
+      "dependencies": [],
+      "orphan": true,
+      "valid": true
+    }
+  ],
+  "summary": {
+    "violations": [],
+    "error": 0,
+    "warn": 0,
+    "info": 0,
+    "totalCruised": 14,
+    "totalDependenciesCruised": 13,
+    "optionsUsed": {
+      "combinedDependencies": false,
+      "exclude": {
+        "path": "^node_modules"
+      },
+      "externalModuleResolutionStrategy": "node_modules",
+      "moduleSystems": [
+        "amd",
+        "cjs",
+        "es6",
+        "tsd"
+      ],
+      "outputTo": "-",
+      "outputType": "json",
+      "preserveSymlinks": false,
+      "tsPreCompilationDeps": false,
+      "exoticRequireStrings": [],
+      "args": "src"
+    },
+    "ruleSetUsed": {}
+  }
+}

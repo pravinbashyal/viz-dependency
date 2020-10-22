@@ -1,4 +1,4 @@
-import { deps } from './deps'
+// import { deps } from './deps'
 import {
   hasLegacyStructure,
   reduceToSourceDep,
@@ -7,16 +7,18 @@ import {
 } from './helpers'
 import { DependencyItem, SourceAndDependsOn } from './Domain'
 
+const deps = require('./dep.json')
+
 const modules = deps.modules.map(reduceToSourceDep)
 
-const legacyModules: Array<DependencyItem> = modules.filter(hasLegacyStructure)
+// const legacyModules: Array<DependencyItem> = modules.filter(hasLegacyStructure)
 
 const modulesThatDependOn = moduleDependencyFinder(modules)
 
 const sortByDependencyLength = (dep1, dep2) =>
   dep2.modulesThatDependsOn.length - dep1.modulesThatDependsOn.length
 
-export const sortedSourceAndDependencies: Array<SourceAndDependsOn> = legacyModules
+export const sortedSourceAndDependencies: Array<SourceAndDependsOn> = modules
   .map((legacyModule) => ({
     source: legacyModule.source,
     modulesThatDependsOn: modulesThatDependOn(legacyModule),
