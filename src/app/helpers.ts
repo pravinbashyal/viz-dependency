@@ -1,5 +1,5 @@
-import { DependencyItem } from './Domain'
 import { uniqBy } from 'lodash'
+import { DependencyItem } from '../domain/Domain'
 
 export const hasLegacyStructure = (module: DependencyItem) => {
   return /LegacyStructure/.test(module.source)

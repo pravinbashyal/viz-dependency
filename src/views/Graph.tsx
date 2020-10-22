@@ -1,12 +1,15 @@
 import React from 'react'
-import { SourceAndDependsOn } from './Domain'
-import { sortedSourceAndDependencies, allUniqueDependencies } from './VisData'
+import { SourceAndDependsOn } from '../domain/Domain'
+import {
+  sortedSourceAndDependencies,
+  allUniqueDependencies,
+} from '../app/VisData'
 import {
   InteractiveForceGraph,
   ForceGraphNode,
   ForceGraphLink,
 } from 'react-vis-force'
-import { hasLegacyStructure } from './helpers'
+import { hasLegacyStructure } from '../app/helpers'
 import { Box, Container } from '@chakra-ui/core'
 
 const gen = require('color-generator')

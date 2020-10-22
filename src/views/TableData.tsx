@@ -1,7 +1,7 @@
 import React from 'react'
 import { ListOfModules } from './ListOfModules'
 import { Box } from '@chakra-ui/core'
-import { SourceAndDependsOn } from './Domain'
+import { SourceAndDependsOn } from '../domain/Domain'
 
 const TableData = ({ data }: { data: SourceAndDependsOn[] }) => (
   <>

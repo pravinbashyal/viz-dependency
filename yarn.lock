@@ -10033,6 +10033,11 @@ react-scripts@3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-simple-animate@^3.3.10:
+  version "3.3.10"
+  resolved "https://registry.npmjs.org/react-simple-animate/-/react-simple-animate-3.3.10.tgz#e2feee7f01afe913979063f2581eefa6a8dba617"
+  integrity sha512-iPvhRFmpQecldbE3coA3fqYGCuYaYV3K7WiUtsHa2ql+PdBUCyKXj9+6CU7k8NlFnv37X9kmXC9QAcWNUhaL8g==
+
 react-style-singleton@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.1.0.tgz#7396885332e9729957f9df51f08cadbfc164e1c4"
