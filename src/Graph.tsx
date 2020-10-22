@@ -6,7 +6,7 @@ import {
   ForceGraphNode,
   ForceGraphLink,
 } from 'react-vis-force'
-import { hasLegacyStructure } from './helpers'
+import { hasLegacyStructure, log } from './helpers'
 import { Wrap, Box, Container } from '@chakra-ui/core'
 
 const gen = require('color-generator')

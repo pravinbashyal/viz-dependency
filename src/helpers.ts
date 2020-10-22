@@ -6,14 +6,19 @@ export const hasLegacyStructure = (module: DependencyItem) => {
 }
 
 export const hasThisAsDependency = (source) => ({ dependencies }) =>
-  dependencies.find(({ module }) => module === source)
+  dependencies.find(
+    ({ resolved }) => source.includes(resolved) || resolved.includes(source)
+  )
 
 export const reduceToSourceDep = ({
   source,
   dependencies,
 }): DependencyItem => ({
-  source,
-  dependencies,
+  source: stripSrc(source),
+  dependencies: dependencies.map(({ resolved, module }) => ({
+    resolved: stripSrc(resolved),
+    module: stripSrc(module),
+  })),
 })
 
 export const resolveDepPathFromDep = ({ resolved }) => resolved
@@ -22,7 +27,7 @@ export const dependencyFromDependencyName = (
   modules: Array<DependencyItem>
 ) => (dependencyName: string) =>
   modules.find(({ source }) => {
-    return source.includes(dependencyName)
+    return source.includes(dependencyName) || dependencyName.includes(source)
   })
 
 export const moduleDependencyFinder = (modules: Array<DependencyItem>) => ({
@@ -36,3 +41,10 @@ export const log = (message: string) => <T>(item: T): T => {
 
 export const uniqBySource = (modules: DependencyItem[]) =>
   uniqBy(modules, 'source')
+
+export const stripSrc = (source) => {
+  if (source.includes('src/', 0)) {
+    return source.substr(4)
+  }
+  return source
+}
