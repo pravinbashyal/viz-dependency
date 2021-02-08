@@ -1355,13 +1355,20 @@
   dependencies:
     "@chakra-ui/utils" "1.0.0-rc.5"
 
-"@chakra-ui/icons@^1.0.0-rc.5":
-  version "1.0.0-rc.5"
-  resolved "https://registry.npmjs.org/@chakra-ui/icons/-/icons-1.0.0-rc.5.tgz#3bd4cfdffae58bdea37a8082ef2f26b97e3b2c4e"
-  integrity sha512-kU239pj5gK/dv6EKj+UZdGj4O7cr9jsTS3h8YAL3D/cdrlkpdF8qlrEHmbr7tw30kvLdnnjCrEYpPNZapOX3tA==
+"@chakra-ui/icon@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icon/-/icon-1.1.1.tgz#13317762a58f3e039b14a52f5cf978d037e64b4b"
+  integrity sha512-dL1D1q11MM+cL849jmADSjY8KqOWplAEb/XgLXX/ZZau7GHqYAXIwdYnfXwOYBaypiosUvGsm9g2zU4iHYZtdg==
   dependencies:
-    "@chakra-ui/icon" "1.0.0-rc.5"
-    "@types/react" "16.9.44"
+    "@chakra-ui/utils" "1.2.0"
+
+"@chakra-ui/icons@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.0.5.tgz#21eee12b9ab12da0430c62ea99e6081a6cec7b14"
+  integrity sha512-l8CgisPAS44ehKLw/hoHI6dfSX7pOAfylv8QkINVPEzhHwnNIg0wHzcm1cGkRXuq3DN8G0z88KmFegFFp02yiA==
+  dependencies:
+    "@chakra-ui/icon" "1.1.1"
+    "@types/react" "^17.0.0"
 
 "@chakra-ui/image@1.0.0-rc.5":
   version "1.0.0-rc.5"
@@ -1651,6 +1658,16 @@
     lodash.mergewith "4.6.2"
     memoize-one "5.1.1"
     object-assign "4.1.1"
+
+"@chakra-ui/utils@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-1.2.0.tgz#9385950e91455ecf480eb52bca268d3a5f8c9d6d"
+  integrity sha512-oMTX8BX1+MUf+iYUafFm9tNfwa3m1cqzMcE/5iQFmNcqKlZmuADnVL28Yw7jhoeouIjANaGY+f51qj9zHgDn9Q==
+  dependencies:
+    "@types/lodash.mergewith" "4.6.6"
+    "@types/object-assign" "4.0.30"
+    css-box-model "1.2.1"
+    lodash.mergewith "4.6.2"
 
 "@chakra-ui/visually-hidden@1.0.0-rc.5":
   version "1.0.0-rc.5"
@@ -2442,18 +2459,18 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.0":
-  version "16.9.53"
-  resolved "https://registry.npmjs.org/@types/react/-/react-16.9.53.tgz#40cd4f8b8d6b9528aedd1fff8fcffe7a112a3d23"
-  integrity sha512-4nW60Sd4L7+WMXH1D6jCdVftuW7j4Za6zdp6tJ33Rqv0nk1ZAmQKML9ZLD4H0dehA3FZxXR/GM8gXplf82oNGw==
+"@types/react@*", "@types/react@^17.0.0":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.1.tgz#eb1f1407dea8da3bc741879c1192aa703ab9975b"
+  integrity sha512-w8t9f53B2ei4jeOqf/gxtc2Sswnc3LBK5s0DyJcg5xd10tMHXts2N31cKjWfH9IC/JvEPa/YF1U4YeP1t4R6HQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
-"@types/react@16.9.44":
-  version "16.9.44"
-  resolved "https://registry.npmjs.org/@types/react/-/react-16.9.44.tgz#da84b179c031aef67dc92c33bd3401f1da2fa3bc"
-  integrity sha512-BtLoJrXdW8DVZauKP+bY4Kmiq7ubcJq+H/aCpRfvPF7RAT3RwR73Sg8szdc2YasbAlWBDrQ6Q+AFM0KwtQY+WQ==
+"@types/react@^16.9.0":
+  version "16.9.53"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.9.53.tgz#40cd4f8b8d6b9528aedd1fff8fcffe7a112a3d23"
+  integrity sha512-4nW60Sd4L7+WMXH1D6jCdVftuW7j4Za6zdp6tJ33Rqv0nk1ZAmQKML9ZLD4H0dehA3FZxXR/GM8gXplf82oNGw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
